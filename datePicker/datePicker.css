@@ -1,0 +1,107 @@
+.calendar-daypast{
+    background: #f1f1f1;
+    color: #ccc;
+    cursor: no-drop;
+}
+.ui-datePicker-wrapper{
+	min-width: 360px;
+	/*position:absolute;*/
+	left:0;
+	margin:auto;
+	width: 600px;
+	top: 50px;
+	bottom:0;
+	right:0;
+	font-family: 'pingfang SC'
+}
+.ui-datePicker-header{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #fff;
+	border:1px solid #ccc;
+	padding: 0 20px;
+	box-sizing: border-box;
+	border-bottom: 0;
+}
+.ui-datePicker-header .ui-datePicker-btn{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    padding: 0 20px;
+}
+.ui-datePicker-header .ui-datePicker-btn.prev{
+	float: left;
+}
+.ui-datePicker-header .ui-datePicker-btn.next{
+	float:right;
+}
+.ui-datePicker-wrapper .ui-dataPicker-body{
+	height: 300px;
+	width:100%;
+}
+.ui-datePicker-wrapper .ui-dataPicker-body table{
+	border-collapse: collapse;
+	width: 100%;
+}
+.ui-datePicker-wrapper .ui-dataPicker-body table thead{
+	height: 40px;
+	line-height: 40px;
+}
+.ui-datePicker-wrapper .ui-dataPicker-body table td{
+	box-sizing: border-box;
+	text-align: center;
+	border:1px solid #ddd;
+	padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+	cursor: pointer;
+	height: 40px;
+}
+.ui-datePicker-wrapper .ui-dataPicker-body table td.prev,.ui-datePicker-wrapper .ui-dataPicker-body table td.next,
+.ui-datePicker-wrapper .ui-dataPicker-body table td.past{
+	background: #f1f1f1;
+	color: #ccc;
+	cursor:not-allowed;
+}
+.ui-datePicker-wrapper .ui-dataPicker-body table td.range{
+	background: #EBF4FA;
+}
+.ui-datePicker-wrapper .ui-dataPicker-body table td.current{
+	background: #06a2d0;
+    color: #fff;
+}
+.ui-datePicker-wrapper .ui-dataPicker-body table td.selected_reserve,.ui-datePicker-wrapper .ui-dataPicker-body table td.selected_live{
+	background: #f1f1f1;
+	position: relative;
+	color: #ccc;
+	cursor: not-allowed;
+}
+.ui-datePicker-wrapper .ui-dataPicker-body table td.selected_reserve:before{
+    content: "已被预约";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size:14px;
+    line-height:40px;
+    background: rgba(0,0,0,.3);
+    color: #ffff;
+}
+.ui-datePicker-wrapper .ui-dataPicker-body table td.selected_live:before{
+    content: "已入住";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size:14px;
+    line-height:40px;
+    background: rgba(0,0,0,.5);
+    background-color:#e73e98;
+    color: #ffff;
+}
